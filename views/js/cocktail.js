@@ -42,14 +42,16 @@ $(function(){
         var ingredient3_ = $('#name_remove3').val();
         var ingredient4_ = $('#name_remove4').val();
         
-        $.delete('api/cocktail', {
-            ingredient: ingredient_,
-            ingredient2: ingredient2_,
-            ingredient3: ingredient3_,
-            ingredient4: ingredient4_,
-        }).done(function(data){
-            alert ("Nous avons encore bien d'autres ingrédients qui seront à votre goût !");
-        });
+       $.ajax({
+               url: '/api/cocktail',
+               type: 'DELETE',
+               data: { ingredient : ingredient_ },
+               success: function(data) {
+                   console.log(data)
+                return this;
+
+               }
+           });
     });
  
 

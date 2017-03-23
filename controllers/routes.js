@@ -60,7 +60,8 @@ server.get('/api/cocktail', function(req, res){
 server.delete('/api/cocktail', function(req,res){
         
         var cocktails = new app.models.cocktail(app,{
-                name : req.body.name        
+                name : req.body.name,        
+                ingredient : req.body.ingredient        
         });
                 
         cocktails.remove(function(rows){
