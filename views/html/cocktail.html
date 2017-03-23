@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="/css/cocktail.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+</head> 
+<body>
+
+ <div class="wrap">
+  <div id="bloc1">
+      <div class="nav">
+              <h1>Cocktails</h1>
+      </div>
+  </div>
+  
+  <div id="bloc2">
+      <button class="submitclass create" id="cocktails">Voir nos cocktails</button>
+    
+    <ul id="cocktail_list"></ul>
+    
+  </div>
+  
+  <div id="bloc3">
+      <form  id="pushingredient">
+            <input class="inputclass" type="text" id="name" name="name" placeholder="Entrez votre nom"/>  
+            
+            <input class="inputclass" type="text" id="ingredient" name="ingredient" placeholder="Entrez votre ingredient"/>  
+            
+            <input class="inputclass" type="text" id="ingredient2" name="ingredient2" placeholder="Entrez votre ingredient"/>  
+            
+            <input class="inputclass" type="text" id="ingredient3" name="ingredient3" placeholder="Entrez votre ingredient"/> 
+             
+            <input class="inputclass" type="text" id="ingredient4" name="ingredient4" placeholder="Entrez votre ingredient"/>  
+            
+            <input id="c_votant" class="submitclass create" type="submit" value="Create">
+        
+    </form>   
+  </div>
+  
+  
+  <div id="bloc4">
+      <form id="deletecocktail" >
+            
+            <input type="text" class="inputclass" id="name_remove" name="name_remove1" placeholder="Nom de l'ingredient"/>  
+            
+            <input type="text" class="inputclass" id="name_remove2" name="name_remove1" placeholder="Nom de l'ingredient"/>  
+            
+            <input type="text" class="inputclass" id="name_remove3" name="name_remove1" placeholder="Nom de l'ingredient"/>
+              
+            <input type="text" class="inputclass" id="name_remove4" name="name_remove1" placeholder="Nom de l'ingredient"/>  
+            
+            
+            <input id="c_vote" class="submitclass create" type="submit" value="Supprimer">    
+        
+</form>   
+
+ 
+  </div>
+    
+
+    </div>
+    
+    
+
+              
+  
+   
+   
+   
+    
+    
+
+    
+    <script src="/js/cocktail.js"></script>
+    
+  
+</body>
+</html>
